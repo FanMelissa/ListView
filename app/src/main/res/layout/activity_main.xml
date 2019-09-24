@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context="com.example.student.myapplication.MainActivity">
+
+
+    <TextView
+        android:id="@+id/tv_QLNV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_green_light"
+        android:gravity="center"
+        android:text="Quản lý nhân viên"
+        android:textSize="24sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="27dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_MaNV"
+            android:layout_width="67dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Mã NV : " />
+
+        <EditText
+            android:id="@+id/et_MaNV"
+            android:layout_width="wrap_content"
+            android:layout_height="67dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="textPersonName" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="27dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_TenNV"
+            android:layout_width="73dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Tên NV : " />
+
+        <EditText
+            android:id="@+id/et_TenNV"
+            android:layout_width="wrap_content"
+            android:layout_height="67dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="27dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_GioiTinh"
+            android:layout_width="175dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Giới tính" />
+
+        <RadioGroup
+            android:id="@+id/genderGroup"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="27dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rb_Nam"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Nam" />
+
+                <RadioButton
+                    android:id="@+id/rb_Nu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Nữ" />
+            </LinearLayout>
+        </RadioGroup>
+
+
+
+    </LinearLayout>
+
+        <Button
+            android:id="@+id/bt_Nhap"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Nhập NV"
+            android:textSize="12dp" />
+
+</LinearLayout>
